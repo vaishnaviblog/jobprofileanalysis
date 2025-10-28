@@ -1,3 +1,4 @@
+#before you start the coding make sure to add csv to the same folder of your codespace so you not get error
 import pandas as pd
 df = pd.read_csv("people.csv")
 print(df)
@@ -23,4 +24,5 @@ print(df.groupby("Occupation")["Age"].max()) #max age by occupation
 print(df.groupby("Graduation_batch")["Age"].min()) #min age by graduation batch
 print(df.groupby("City")["Age"].min()) #min age by city
 print(df.groupby("Occupation")["Age"].min()) #min age by occupation
+
 print(df.groupby("Graduation_batch")["Salary"].min()) #min salary by graduation batch
